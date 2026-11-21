@@ -1,0 +1,13 @@
+question,category,expected_source,expected_action
+"What are the three main machine learning paradigms?","direct_indomain","artificial_intelligence_overview.txt","Answer from context"
+"Explain the difference between ReLU and Sigmoid activation functions.","direct_indomain","artificial_intelligence_overview.txt","Answer from context"
+"What is the CAP theorem and what trade-offs does it describe?","direct_indomain","cloud_computing_and_distributed_systems.txt","Answer from context"
+"How does the Raft consensus algorithm detect leader failure?","direct_indomain","cloud_computing_and_distributed_systems.txt","Answer from context"
+"What is Betz's law regarding wind turbine kinetic energy?","direct_indomain","renewable_energy_technologies.txt","Answer from context"
+"What is Levelized Cost of Electricity (LCOE)?","direct_indomain","renewable_energy_technologies.txt","Answer from context"
+"Can you tell me about those neuron things and how they learn when making mistakes?","ambiguous_indomain","artificial_intelligence_overview.txt","Rewrite query and Answer"
+"What happens when cloud computers can't talk to each other over the network?","ambiguous_indomain","cloud_computing_and_distributed_systems.txt","Rewrite query and Answer"
+"Tell me about the glass panels that turn sunlight into electric power.","ambiguous_indomain","renewable_energy_technologies.txt","Rewrite query and Answer"
+"Who won the FIFA World Cup in 1998?","out_of_domain","none","Refuse to answer (No Hallucination)"
+"What are the symptoms of acute appendicitis?","out_of_domain","none","Refuse to answer (No Hallucination)"
+"Explain the chemical synthesis of acetylsalicylic acid.","out_of_domain","none","Refuse to answer (No Hallucination)"
