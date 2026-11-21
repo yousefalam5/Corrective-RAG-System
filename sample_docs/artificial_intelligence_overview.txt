@@ -1,0 +1,24 @@
+# Artificial Intelligence and Machine Learning: Foundations and Architectures
+
+## 1. Introduction to Machine Learning Paradigms
+Machine Learning (ML) algorithms enable computational systems to learn patterns directly from empirical data without being explicitly programmed for every specific contingency. The field is broadly divided into three foundational paradigms:
+- Supervised Learning: The algorithm is trained on labeled pairs consisting of input features and ground-truth targets. Key tasks include classification (discrete target variables) and regression (continuous real-valued targets). Common algorithms include Linear Regression, Logistic Regression, Support Vector Machines (SVM), Random Forests, and Gradient Boosted Decision Trees (XGBoost).
+- Unsupervised Learning: The model processes unannotated data to uncover latent structures, representations, or probability distributions. Primary applications include clustering (K-Means, DBSCAN, Hierarchical Clustering), dimensionality reduction (Principal Component Analysis - PCA, t-SNE, UMAP), and density estimation.
+- Reinforcement Learning (RL): An autonomous agent interacts dynamically with an environment through a sequence of actions, observing state transitions and receiving scalar numerical reward signals. The objective is to learn an optimal behavioral policy that maximizes cumulative discounted future return.
+
+## 2. Deep Neural Network Architectures
+Deep Learning models are composed of parameterized non-linear mathematical transformations stacked across multiple hierarchical layers:
+- Multilayer Perceptrons (MLPs): Dense feed-forward layers where every neuron computes an affine transformation followed by a non-linear activation function.
+- Activation Functions: Essential for breaking linearity and enabling universal function approximation. Common activation functions include Rectified Linear Unit (ReLU: f(x) = max(0, x)), Leaky ReLU, Parametric ReLU, Sigmoid (mapping inputs to [0, 1]), and Hyperbolic Tangent (Tanh: mapping inputs to [-1, 1]).
+- Convolutional Neural Networks (CNNs): Tailored for spatially structured grid data such as images. They exploit spatial locality and translation invariance through weight sharing, parameterized 2D/3D convolutional kernels, and pooling layers (MaxPooling, AveragePooling).
+- Recurrent Neural Networks (RNNs) and LSTMs: Designed for sequential and temporal data. Long Short-Term Memory (LSTM) networks resolve the vanishing and exploding gradient problem using input, forget, and output gating mechanisms.
+
+## 3. The Transformer Architecture and Self-Attention
+Introduced by Vaswani et al. in 2017, the Transformer architecture superseded recurrent networks through the Scaled Dot-Product Attention mechanism:
+Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V
+Where Query (Q), Key (K), and Value (V) projections allow the model to attend simultaneously to arbitrary positions in a sequence regardless of distance, facilitating massive parallelization on modern GPU accelerators.
+
+## 4. Regularization and Optimization in Deep Learning
+Training deep neural networks requires careful regularization and optimization strategies:
+- Optimization: Stochastic Gradient Descent (SGD) with momentum, RMSprop, and AdamW (Adaptive Moment Estimation with decoupled weight decay) iteratively minimize non-convex loss surfaces.
+- Regularization Techniques: Dropout randomly deactivates a fraction of neurons during each training step to prevent co-adaptation. Weight decay (L2 regularization) penalizes large weight magnitudes. Batch Normalization and Layer Normalization stabilize internal covariate shift and accelerate convergence.

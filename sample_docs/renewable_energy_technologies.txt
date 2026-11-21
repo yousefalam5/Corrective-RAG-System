@@ -1,0 +1,23 @@
+# Renewable Energy Systems and Sustainable Technologies
+
+## 1. Solar Photovoltaic (PV) Technologies
+Solar photovoltaic conversion transforms incident solar radiation directly into direct-current (DC) electricity via the semiconductor photoelectric effect:
+- Monocrystalline Silicon Cells: Manufactured from single continuous silicon crystal ingots. They offer the highest commercial energy conversion efficiencies (ranging from 20% to 24%) and superior temperature coefficients.
+- Polycrystalline Silicon Cells: Produced by melting multiple silicon fragments together. Although more cost-effective to manufacture, their operational efficiency is lower (typically 15% to 18%).
+- Perovskite Solar Cells: Emerging thin-film materials exhibiting exceptional light absorption coefficients and tunable bandgaps, often paired in tandem with silicon cells to surpass the theoretical Shockley-Queisser efficiency limit of single-junction devices (33.7%).
+
+## 2. Wind Energy Conversion Systems
+Wind turbines harness the kinetic aerodynamic energy of atmospheric air masses:
+- Aerodynamic Principles: Wind passing over turbine airfoils generates aerodynamic lift forces perpendicular to the apparent wind vector, driving rotational torque through a low-speed shaft into a step-up gearbox and induction generator.
+- Betz's Law: Establishes the theoretical maximum limit for wind turbine kinetic power extraction at 16/27 (approximately 59.3%) of upstream aerodynamic power. Modern utility-scale horizontal-axis wind turbines operate near 45% to 50% aerodynamic efficiency.
+
+## 3. Grid-Scale Energy Storage Systems
+Due to the intermittent nature of solar and wind generation, utility grid stability requires advanced energy storage:
+- Lithium-Ion Batteries (NMC and LFP): Dominate short-duration stationary storage (2 to 4 hours) due to high round-trip energy efficiency (85% to 92%) and decreasing capital costs.
+- Solid-State Batteries: Replace flammable liquid electrolytes with solid ceramic or polymer conductors, offering higher volumetric energy densities and enhanced thermal safety.
+- Pumped Hydroelectric Storage (PHS): Accounts for over 90% of global grid storage capacity, pumping water from a lower reservoir to an elevated storage basin during periods of low demand and releasing it through hydro-turbines during peak consumption.
+
+## 4. Economic Metrics: Levelized Cost of Electricity (LCOE)
+The Levelized Cost of Electricity (LCOE) represents the net present value of the unit cost of electricity over the operational lifetime of a generating asset:
+LCOE = (Total Capital Costs + Net Present Value of O&M Costs + Fuel Costs) / (Net Present Value of Lifetime Electrical Output)
+Over the past decade, solar PV and onshore wind have achieved significant cost declines, establishing lower LCOEs than newly built fossil fuel generation in most competitive global energy markets.

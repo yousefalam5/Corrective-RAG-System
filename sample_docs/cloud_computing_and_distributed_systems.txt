@@ -1,0 +1,24 @@
+# Cloud Computing Architectures and Distributed Systems
+
+## 1. Cloud Service and Deployment Models
+Cloud computing delivers on-demand computational resources over the internet under a metered utility pricing model:
+- Infrastructure as a Service (IaaS): Provides raw compute virtual machines, storage blocks, and virtual networking infrastructure (e.g., AWS EC2, Google Compute Engine, Azure VMs).
+- Platform as a Service (PaaS): Delivers fully managed execution environments and runtimes where developers deploy application code without managing the underlying operating system or patching kernels (e.g., AWS Elastic Beanstalk, Google App Engine).
+- Software as a Service (SaaS): Delivers complete, ready-to-use software applications accessed through web browsers or APIs (e.g., Microsoft 365, Salesforce).
+
+## 2. Distributed Systems Theory and the CAP Theorem
+A distributed system consists of autonomous computing nodes connected over a network that coordinate actions via message passing:
+- The CAP Theorem: Formulated by Eric Brewer, it mathematically proves that in the presence of a network partition (P), a distributed data store can guarantee at most one of the following two properties:
+  1. Consistency (C): Every read operation receives the most recent write or an explicit error.
+  2. Availability (A): Every non-failing node returns a non-error response without guarantee that it contains the most recent write.
+  Consequently, distributed databases must choose between CP (e.g., Apache HBase, Google Spanner) and AP (e.g., Apache Cassandra, DynamoDB) trade-offs.
+
+## 3. Distributed Consensus Protocols
+Distributed consensus ensures agreement among distributed nodes even when some nodes fail or experience network latency:
+- Paxos: The foundational fault-tolerant consensus algorithm based on rounds of proposer, acceptor, and learner roles.
+- Raft Consensus Algorithm: Designed explicitly for understandability, dividing consensus into leader election, log replication, and commitment safety. Nodes exist in one of three states: Follower, Candidate, or Leader. Heartbeat timers detect leader failures and trigger randomized election timeouts.
+
+## 4. Microservices Architecture and Container Orchestration
+Modern cloud-native systems decompose monolithic enterprise codebases into decoupled microservices communicating via lightweight HTTP REST APIs or gRPC:
+- Containers: Operating-system-level virtualization packaging application code and dependencies into portable, immutable Open Container Initiative (OCI) images using Linux namespaces and cgroups.
+- Kubernetes (K8s): The industry-standard container orchestrator providing declarative cluster management, automated horizontal pod autoscaling (HPA), rolling updates, ingress routing, and self-healing service reconciliation loops.
